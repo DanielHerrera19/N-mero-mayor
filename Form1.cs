@@ -26,9 +26,9 @@ namespace numeros_de_mayor_a_menor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num1 = int.Parse(Num1TextBox.Text);
-            int num2 = int.Parse(Num2TextBox.Text);
-            int num3 = int.Parse(Num3TextBox.Text);
+            int num1 = int.Parse(Num1txt.Text);
+            int num2 = int.Parse(Num2txt.Text);
+            int num3 = int.Parse(Num3txt.Text);
 
             if (num1 != num2 && num1 != num3 && num2 != num3)
             {
@@ -44,11 +44,11 @@ namespace numeros_de_mayor_a_menor
                     mayor = num3;
                 }
 
-                ResultLabel.Text = $"El mayor número es: {mayor}";
+                ResultLabel.Text = $"El mayor nÃºmero es: {mayor}";
             }
             else
             {
-                ResultLabel.Text = "Los números deben ser diferentes";
+                ResultLabel.Text = "Los nÃºmeros deben ser diferentes";
             }
         }
 
